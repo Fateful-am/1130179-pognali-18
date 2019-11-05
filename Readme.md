@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Мальцев](https://up.htmlacademy.ru/adaptive/18/user/1130179).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Вилков](https://htmlacademy.ru/profile/id1147147).
 
 ---
 
