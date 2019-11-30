@@ -52,6 +52,132 @@
     </header>
     <main class="page-main">
       <h1 class="">Направления</h1>
+      <section class="user-info">
+        <img class="user-info__image" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Мое фото">
+        <div class="user-info__level-wrapper level level--v3">
+          <svg class="level__pie level__pie--80" viewBox="0 0 100 100" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+            <circle circle cx="50" cy="50" r="47.5"> </circle>
+          </svg>
+          <span class="level__num">80</span>
+        </div>
+        <button class="user-info__change-photo button" type="button" name=""></button>
+        <form class="user-info__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="user-info__label" for="user-tags">Тэги</label>
+          <input class="user-info__tags" id="user-tags" type="text" name="user-tags" aria-label="Пользовательские тэги" value="#бургер #бар #футбол #концерт #крафт">
+          <fieldset class="user-info__fieldset">
+            <legend class="user-info__legend">Транспорт</legend>
+            <input class="visually-hidden user-info__checkbox" id="plane" type="checkbox" name="plane" aria-label="Авиаперелет" checked>
+            <label class="user-info__label user-info__label--plane" for="plane"></label>
+
+            <input class="visually-hidden user-info__checkbox" id="bus" type="checkbox" name="bus" aria-label="Автотранспорт" checked>
+            <label class="user-info__label user-info__label--bus" for="bus"></label>
+
+            <input class="visually-hidden user-info__checkbox" id="bike" type="checkbox" name="bike" aria-label="Велосипед">
+            <label class="user-info__label user-info__label--bike" for="bike"></label>
+
+            <input class="visually-hidden user-info__checkbox" id="run" type="checkbox" name="run" aria-label="Пешком" checked>
+            <label class="user-info__label user-info__label--run" for="run"></label>
+          </fieldset>
+        </form>
+      </section>
+      <section class="user-plans">
+        <h2>Мои планы:</h2>
+        <ul class="user-plans-list">
+          <li class="user-plans-list__item">
+            <p class="plan-header"><span class="plan-number">1.</span>Франция, Италия</p>
+            <p class="plan-detail">3 попутчика</p>
+            <p class="plan-detail">26 мар — 29 мар</p>
+            <button class="plan-change-button" type="button">Изменить</button>
+          </li>
+          <li class="user-plans-list__item">
+            <p class="plan-header"><span class="plan-number">3.</span>Таиланд, Индонезия</p>
+            <p class="plan-detail">1 попутчик</p>
+            <p class="plan-detail">1 июл — 15 июл</p>
+            <button class="plan-change-button" type="button">Изменить</button>
+          </li>
+        </ul>
+      </section>
+      <section class="add-plan">
+        <h2>Добавить план:</h2>
+        <form class="add-plan-form" action="https://echo.htmlacademy.ru/" method="post">
+          <ul class="step-list">
+            <li class="step-list__item step-1">
+              <p class="step-header">Шаг 1.</p>
+              <p class="step-header">Даты пребывания</p>
+              <p class="step-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+              </p>
+              <div class="input-count-wrapper">
+                <p class="count-label">Ищу попутчиков:</p>
+                <button class="count-button button-inc" type="button" aria-label="Убавить попутчиков">-</button>
+                <input type="text" name="tm-number" value="2"  aria-label="Количество попутчиков">
+                <button class="count-button button-inc" type="button" aria-label="Добавить попутчиков">+</button>
+              </div>
+              <div class="input-count-wrapper">
+                <p class="count-label">Длительность:</p>
+                <button class="count-button button-inc" type="button" aria-label="Убавить попутчиков">-</button>
+                <input type="text" name="days-number" value="2"  aria-label="Количество попутчиков">
+                <button class="count-button button-inc" type="button" aria-label="Добавить попутчиков">+</button>
+              </div>
+              <input class="visually-hidden with-kids-checkbox" id="with-kids-checkbox" type="checkbox" name="with-kids-checkbox" aria-label="Можно с детьми">
+              <label class="yellow-filter__label" for="with-kids-checkbox">Можно с детьми</label>
+              <div class="calendar-vidget">
+
+              </div>
+              <a class="step-next-step" href="#">Следующий шаг</a>
+            </li>
+            <li class="step-list__item step-2">
+              <p class="step-header">Шаг 2.</p>
+              <p class="step-header">Маршрут</p>
+              <p class="step-description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+              </p>
+              <div class="choose-country-wrapper">
+                <select class="choose-country__name" name="country-choose-1">
+                  <option value="Босния и герцеговина">Босния и герцеговина</option>
+                </select>
+                <button class="choose-country__choose-button" type="button" aria-label="Выбрать страну"></button>
+                <button class="choose-country__del-button" type="button" aria-label="Удалить страну"></button>
+              </div>
+              <div class="choose-country-wrapper">
+                <select class="choose-country__name" name="country-choose-2">
+                  <option value="Чехия">Чехия</option>
+                </select>
+                <button class="choose-country__choose-button" type="button" aria-label="Выбрать страну"></button>
+                <button class="choose-country__del-button" type="button" aria-label="Удалить страну"></button>
+              </div>
+              <div class="choose-country-wrapper empty-country">
+                <p class="choose-country__name">Выберите страну</p>
+                <button class="choose-country__choose-button" type="button" aria-label="Выбрать страну"></button>
+                <button class="choose-country__del-button" type="button" aria-label="Удалить страну"></button>
+              </div>
+              <div class="choose-country-wrapper add-country">
+                <p class="choose-country__name">Добавить страну</p>
+                <button class="choose-country__choose-button" type="button" aria-label="Выбрать страну"></button>
+                <button class="choose-country__del-button" type="button" aria-label="Удалить страну"></button>
+              </div>
+              <a class="step-next-step" href="#">Следующий шаг</a>
+              <a class="step-prev-step" href="#">На шаг назад</a>
+            </li>
+
+            <li class="step-list__item step-3">
+              <p class="step-header">Шаг 3.</p>
+              <p class="step-header">Развлечения</p>
+              <p class="step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+              </p>
+              <div class="fun-wrapper">
+                <p class="fun-country__name">Босния и герцеговина</p>
+                <textarea class="fun_country_plan" name="country-plan-1" rows="8" cols="80" placeholder="План действий"></textarea>
+              </div>
+              <div class="fun-wrapper">
+                <p class="fun-country__name">Чехия</p>
+                <textarea class="fun_country_plan" name="country-plan-2" rows="8" cols="80" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                </textarea>
+              </div>
+              <button type="submit">Отправить</button>
+              <a class="step-prev-step" href="#">На шаг назад</a>
+            </li>
+          </ul>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="site-logo" href="">

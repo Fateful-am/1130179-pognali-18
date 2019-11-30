@@ -51,9 +51,102 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="">Попутчики</h1>
+      <h1 class="header-1">Попутчики</h1>
       <section class="filter">
+      <form class="yellow-filter" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="country-filter-wrapper">
+          <p class="country-filter__header">Фильтрация по странам</p>
+          <button class="country-filter__toggle" type="button" aria-label="Переключить меню"></button>
+          <ul class="country-filter-list zone-list">
+            <li class="zone-list__item zone-list__item--active">Европа</li>
+            <li class="zone-list__item">Азия</li>
+            <li class="zone-list__item">Америка</li>
+            <li class="zone-list__item">Острова</li>
+          </ul>
+          <ul class="country-filter-list letter-list">
+            <li class="letter-list__item letter-list__item--active">А</li>
+            <li class="letter-list__item">Б</li>
+            <li class="letter-list__item">В</li>
+            <li class="letter-list__item">Г</li>
+            <li class="letter-list__item">Д</li>
+            <li class="letter-list__item">Е</li>
+            <li class="letter-list__item">З</li>
+            <li class="letter-list__item">И</li>
+            <li class="letter-list__item">К</li>
+            <li class="letter-list__item">Л</li>
+            <li class="letter-list__item">М</li>
+            <li class="letter-list__item">Н</li>
+            <li class="letter-list__item">О</li>
+            <li class="letter-list__item">П</li>
+            <li class="letter-list__item">Р</li>
+            <li class="letter-list__item">С</li>
+            <li class="letter-list__item">Т</li>
+            <li class="letter-list__item">У</li>
+            <li class="letter-list__item">Ф</li>
+            <li class="letter-list__item">Х</li>
+            <li class="letter-list__item">Ч</li>
+            <li class="letter-list__item">Ш</li>
+            <li class="letter-list__item">Э</li>
+            <li class="letter-list__item">Ю</li>
+            <li class="letter-list__item">Я</li>
+          </ul>
+          <ul class="country-filter-list country-list">
+            <li class="country-list__item">Афганистан</li>
+            <li class="country-list__item">Албания</li>
+            <li class="country-list__item">Алжир</li>
+            <li class="country-list__item">Андорра</li>
+            <li class="country-list__item">Аргентина</li>
+            <li class="country-list__item">Армения</li>
+            <li class="country-list__item">Австралия</li>
+            <li class="country-list__item">Австрия</li>
+            <li class="country-list__item">Азербайджан</li>
+          </ul>
+          <button class="country-filter__hide" type="button" aria-label="Свернуть">Свернуть</button>
+        </div>
 
+
+        <h2 class="yellow-filter__header">Подберите идеального  попутчика</h2>
+        <fieldset class="yellow-filter__fieldset">
+          <legend class="yellow-filter__legend">Хобби</legend>
+        </fieldset>
+        <fieldset class="yellow-filter__fieldset">
+          <legend class="yellow-filter__legend">Музыка</legend>
+          <input class="visually-hidden yellow-filter__checkbox" id="hard-rock" type="checkbox" name="hard-rock" aria-label="Тяжелый рок" checked>
+          <label class="yellow-filter__label" for="hard-rock">Тяжелый рок</label>
+
+          <input class="visually-hidden yellow-filter__checkbox" id="russian-rep" type="checkbox" name="russian-rep" aria-label="Русский рэп">
+          <label class="yellow-filter__label" for="russian-rep">Русский рэп</label>
+
+          <input class="visually-hidden yellow-filter__checkbox" id="euro-dance" type="checkbox" name="euro-dance" aria-label="Евроденс">
+          <label class="yellow-filter__label" for="euro-dance">Евроденс</label>
+        </fieldset>
+        <fieldset class="yellow-filter__fieldset">
+          <legend class="yellow-filter__legend">Еда</legend>
+        </fieldset>
+        <fieldset class="yellow-filter__fieldset">
+          <legend class="yellow-filter__legend">Транспорт</legend>
+          <input class="visually-hidden yellow-filter__checkbox" id="plane" type="checkbox" name="plane" aria-label="Авиаперелет" checked>
+          <label class="yellow-filter__label yellow-filter__label--plane" for="plane"></label>
+
+          <input class="visually-hidden yellow-filter__checkbox" id="bus" type="checkbox" name="bus" aria-label="Автотранспорт" checked>
+          <label class="yellow-filter__label yellow-filter__label--bus" for="bus"></label>
+
+          <input class="visually-hidden yellow-filter__checkbox" id="bike" type="checkbox" name="bike" aria-label="Велосипед">
+          <label class="yellow-filter__label yellow-filter__label--bike" for="bike"></label>
+
+          <input class="visually-hidden yellow-filter__checkbox" id="run" type="checkbox" name="run" aria-label="Пешком" checked>
+          <label class="yellow-filter__label yellow-filter__label--run" for="run"></label>
+
+        </fieldset>
+        <fieldset class="yellow-filter__fieldset">
+          <legend class="yellow-filter__legend">Левел</legend>
+          <input class="yellow-filte__edit" id="level-from" type="text" name="level-from" aria-label="Начиная с" value="30">
+          <input class="yellow-filte__edit" id="level-to" type="text" name="level-to" aria-label="Заканчивая" value="100">
+          <div class="yellow-filter__level-toggle-wraper">
+          </div>
+        </fieldset>
+        <button class="yellow-filter__button" type="submit" aria-label="Показать">Показать</button>
+      </form>
       </section>
       <section class="travelmates">
         <ul class="travelmates-slides">
