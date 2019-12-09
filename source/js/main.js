@@ -12,10 +12,10 @@ pageHeader.classList.remove('page-header--scroll');
 function checkScroll() {
   var minScroll = 0;
   if(window.matchMedia('(min-width: 1440px)').matches){
-  	minScroll = 750;
+    minScroll = 750;
   } else {
     if(window.matchMedia('(max-width: 768px)').matches){
-    	minScroll = 480;
+      minScroll = 480;
     }
   }
   if (window.scrollY > minScroll) {
@@ -49,7 +49,7 @@ window.addEventListener('scroll', function(e) {
 
 window.onresize = function() {
   if(window.matchMedia('(min-width: 1440px)').matches){
-  	navMain.classList.remove('main-nav--opened');
+    navMain.classList.remove('main-nav--opened');
     navMain.classList.add('main-nav--closed');
     // pageHeader.classList.remove('page-header--scroll');
   }
