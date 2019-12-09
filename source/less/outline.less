@@ -1,0 +1,52 @@
+
+body {
+  background: @bg-grey url("/img/preview/pognali-index-mobile.jpg") no-repeat 50% 0;
+  background-size: @mobile-width auto;
+  min-height: 750px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background: @bg-grey url("/img/preview/pognali-index-tablet.jpg") no-repeat 50% 0;
+    background-size: @tablet-width auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background: @bg-grey url("/img/preview/pognali-index-desktop.jpg") no-repeat 50% 0;
+    background-size: @desktop-width auto;
+  }
+}
+
+.outline (@clname,@color) {
+  .@{clname} {
+    outline: 2px solid @color;
+    background-color: rgba(red(@color), green(@color), blue(@color), 0.3);
+
+    &::before {
+      content: ".@{clname}";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: saturate(@color, 20%);
+      font-weight: 800;
+      font-size: 12px;
+      background-color: rgba(red(lighten(@color, 40%)), green(lighten(@color, 40%)), blue(lighten(@color, 40%)), 0.7);
+      opacity: 0.6;
+    }
+  }
+}
+
+
+.outlineP(@clname,@color) {
+  .@{clname} {
+    position: relative;
+  }
+  .outline(@clname,@color);
+}
+
+.outline(page-header,red);
+.outline(site-logo,green);
+.outlineP(intro,blue);
+.outlineP(intro__header,yellow);

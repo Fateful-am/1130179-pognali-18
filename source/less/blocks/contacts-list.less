@@ -1,0 +1,234 @@
+.contacts-list {
+  display: flex;
+}
+
+.contacts-list__item::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contacts-list__item-phone {
+  &::before {
+    background-color: #ff8d30;
+  }
+
+  &:hover::before,
+  &:active::before {
+    background-color: #f26926;
+  }
+}
+
+.contacts-list__item-email {
+  &::before {
+    background-color: #ffbd30;
+  }
+
+  &:hover::before {
+    background-color: #ff8d30;
+  }
+}
+
+.contacts-list__link {
+  position: relative;
+  display: flex;
+  min-width: 40px;
+  height: 40px;
+  color: #192144;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover .contacts-list__icon-contacts-phone,
+  &:hover .contacts-list__icon-contacts-email {
+    fill: #ffbd30;
+  }
+
+  &:active .contacts-list__icon-topmenu-phone,
+  &:active .contacts-list__icon-topmenu-email,
+  &:active .contacts-list__icon-contacts-phone,
+  &:active .contacts-list__icon-contacts-email {
+    opacity: 0.3;
+  }
+}
+
+.contacts-list__text {
+  display: none;
+}
+
+.contacts-list__icon-topmenu-phone {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  fill: #161c35;
+}
+
+.contacts-list__icon-topmenu-email {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  fill: #161c35;
+}
+
+.contacts-list__icon-contacts-phone,
+.contacts-list__icon-contacts-email {
+  display: none;
+}
+
+.main-nav--opened {
+  & .contacts-list {
+    top: 0;
+    left: 0;
+    margin-top: 51px;
+    flex-direction: column;
+  }
+
+  & .contacts-list__item::before {
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+  }
+
+  & .contacts-list__link {
+    color: #192144;
+    height: 45px;
+
+    &:hover {
+      color: rgba(25, 33, 68, 0.6);
+    }
+
+    &:active {
+      color: rgba(25, 33, 68, 0.3);
+    }
+  }
+
+  & .contacts-list__text {
+    display: block;
+    margin-left: 61px;
+    padding-top: 13px;
+  }
+
+  & .contacts-list__icon-topmenu-phone,
+  .contacts-list__icon-topmenu-email {
+    display: none;
+  }
+
+  & .contacts-list__icon-contacts-phone,
+  .contacts-list__icon-contacts-email {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    fill: #ffd74b;
+  }
+
+  & .contacts-list__icon-contacts-email {
+    top: 17px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-list {
+    display: none;
+  }
+
+  .main-nav--opened {
+    & .contacts-list {
+      display: flex;
+      margin-top: 79px;
+      margin-left: 57px;
+    }
+
+    & .contacts-list__item::before {
+      width: 68px;
+      height: 68px;
+    }
+
+    & .contacts-list__link {
+      height: 68px;
+      font-size: 28px;
+    }
+
+    & .contacts-list__text {
+      margin-left: 92px;
+      padding-top: 25px;
+    }
+
+    & .contacts-list__icon-contacts-phone,
+    .contacts-list__icon-contacts-email {
+      width: 27px;
+      height: 27px;
+      top: 21px;
+      left: 21px;
+      fill: #ffd74b;
+    }
+
+    & .contacts-list__icon-contacts-email {
+      height: 20px;
+      top: 25px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-list,
+  .body--nojs .contacts-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .contacts-list__item::before,
+  .body--nojs .contacts-list__item::before {
+    width: 50px;
+    height: 50px;
+    background-color: #ffbd30;
+  }
+
+  .contacts-list__item-phone::before,
+  .body--nojs .contacts-list__item-phone::before {
+    background-color: #ff8d30;
+  }
+
+  .contacts-list__item-phone:hover::before,
+  .contacts-list__item-phone:active::before {
+    background-color: #f26926;
+  }
+
+  .contacts-list__item-email:hover::before {
+    background-color: #ff8d30;
+  }
+
+
+  .contacts-list__link,
+  .body--nojs .contacts-list__link {
+    min-width: 50px;
+    height: 50px;
+  }
+
+  .contacts-list__icon-topmenu-phone,
+  .body--nojs .contacts-list__icon-topmenu-phone {
+    display: block;
+    top: 16px;
+    left: 17px;
+  }
+
+  .contacts-list__icon-topmenu-email,
+  .body--nojs .contacts-list__icon-topmenu-email {
+    display: block;
+    top: 18px;
+    left: 16px;
+  }
+
+  .body--nojs {
+    & .contacts-list__icon-contacts-phone,
+    & .contacts-list__icon-contacts-email,
+    & .contacts-list__text {
+      display: none;
+    }
+  }
+}
