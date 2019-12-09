@@ -36,8 +36,15 @@
   }
 }
 
+@media (max-width: @tablet-width) {
+  .body__inner .user-list {
+    display: none;
+  }
+}
+
 .main-nav--opened {
   & .user-list {
+    display: flex;
     order: 0;
   }
 
