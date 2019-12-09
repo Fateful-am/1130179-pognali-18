@@ -6,7 +6,11 @@ var sourcemap = require("gulp-sourcemaps");
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require("gulp-csso");
+var rename = require("gulp-rename");
 var server = require("browser-sync").create();
+var imagemin = require("gulp-imagemin");
+
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -16,6 +20,8 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    // .pipe(csso())
+    // .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
