@@ -1,8 +1,9 @@
 
 body {
+  min-height: 750px;
+
   background: @bg-grey url("/img/preview/pognali-index-mobile.jpg") no-repeat 50% 0;
   background-size: @mobile-width auto;
-  min-height: 750px;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,17 +22,19 @@ body {
 
 .outline (@clname,@color) {
   .@{clname} {
-    outline: 2px solid @color;
     background-color: rgba(red(@color), green(@color), blue(@color), 0.3);
+    outline: 2px solid @color;
 
     &::before {
       content: ".@{clname}";
       position: absolute;
       right: 0;
       bottom: 0;
-      color: saturate(@color, 20%);
+
       font-weight: 800;
       font-size: 12px;
+      color: saturate(@color, 20%);
+
       background-color: rgba(red(lighten(@color, 40%)), green(lighten(@color, 40%)), blue(lighten(@color, 40%)), 0.7);
       opacity: 0.6;
     }
@@ -40,10 +43,11 @@ body {
 
 
 .outlineP(@clname,@color) {
+  .outline(@clname,@color);
+
   .@{clname} {
     position: relative;
   }
-  .outline(@clname,@color);
 }
 
 .outline(page-header,red);

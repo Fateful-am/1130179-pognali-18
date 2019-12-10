@@ -1,17 +1,18 @@
 .site-logo {
   position: absolute;
-  left: 25px;
   top: 27px;
-  line-height: 1px;
+  left: 25px;
   z-index: 101;
+
+  line-height: 1px;
 }
 
 .page-header--scroll {
-  & .site-logo__blue {
+  .site-logo__blue {
     display: block;
   }
 
-  & .site-logo__white {
+  .site-logo__white {
     display: none;
   }
 }
@@ -31,8 +32,8 @@
 
 @media (min-width: @tablet-width) {
   .site-logo {
-    left: 40px;
     top: 45px;
+    left: 40px;
   }
 
   .site-logo__image {
@@ -43,8 +44,8 @@
 
 @media (min-width: @desktop-width) {
   .site-logo {
-    left: 60px;
     top: 47px;
+    left: 60px;
   }
 
   .site-logo__image {
@@ -57,15 +58,15 @@
   }
 
   .body--nojs {
-    & .site-logo {
+    .site-logo {
       top: 47px;
     }
 
-    & .site-logo__white {
+    .site-logo__white {
       display: block;
     }
 
-    & .site-logo__blue {
+    .site-logo__blue {
       display: none;
     }
   }

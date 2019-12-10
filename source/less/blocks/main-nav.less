@@ -1,9 +1,9 @@
 .body--nojs {
-  & .main-nav__toggle {
+  .main-nav__toggle {
     display: none;
   }
 
-  & .main-nav {
+  .main-nav {
     position: static;
   }
 }
@@ -14,12 +14,13 @@
 
 .main-nav__wrapper {
   position: relative;
+  z-index: 10;
+
+  display: flex;
+  width: 100%;
   margin-top: 458px;
   padding-right: 25px;
   padding-left: 25px;
-  width: 100%;
-  display: flex;
-  z-index: 10;
 }
 
 .main-nav__toggle {
@@ -27,32 +28,36 @@
   top: 20px;
   right: 21px;
   z-index: 11;
+
   display: block;
   width: 33px;
   height: 33px;
+
   background-color: #161c36;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 }
 
 .main-nav--closed {
-  & .main-nav__toggle::before {
+  .main-nav__toggle::before {
     content: "";
     position: absolute;
     top: 11px;
     right: 4px;
+
     width: 25px;
     height: 3px;
+
     background-color: #ffffff;
     box-shadow: 0 8px 0 0 #ffffff;
   }
 
-  & .main-nav__toggle:hover::before {
+  .main-nav__toggle:hover::before {
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.6);
   }
 
-  & .main-nav__toggle:active::before {
+  .main-nav__toggle:active::before {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3);
   }
@@ -61,22 +66,26 @@
 .main-nav--opened {
   .main-nav__wrapper {
     position: absolute;
-    margin-top: 0;
+
+    flex-direction: column;
     width: @mobile-width;
     height: 105vh;
-    flex-direction: column;
+    margin-top: 0;
+
     background-color: #ffffff;
   }
 
-  & .main-nav__toggle {
+  .main-nav__toggle {
     &::before,
     &::after {
       content: "";
       position: absolute;
       top: 16px;
       left: 4px;
+
       width: 25px;
       height: 2px;
+
       background-color: #cccccc;
     }
 
@@ -105,15 +114,15 @@
 }
 
 .page-header--scroll {
-  & .main-nav__wrapper {
+  .main-nav__wrapper {
     margin-top: -40px;
   }
 
-  & .main-nav__toggle {
+  .main-nav__toggle {
     background-color: #ffffff;
   }
 
-  & .main-nav--closed .main-nav__toggle {
+  .main-nav--closed .main-nav__toggle {
     &::before {
       background-color: #cccccc;
       box-shadow: 0 8px 0 0 #cccccc;
@@ -134,22 +143,23 @@
 @media (min-width: @tablet-width) {
   .main-nav__wrapper,
   .page-header--scroll .main-nav__wrapper {
+    justify-content: flex-end;
     margin-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
-    justify-content: flex-end;
   }
 
   .main-nav--opened .main-nav__wrapper {
-    width: @tablet-width;
     justify-content: flex-start;
+    width: @tablet-width;
   }
 
   .main-nav__toggle {
     top: 50px;
     right: 50%;
-    transform: translateX(50%);
+
     background-color: #182044;
+    transform: translateX(50%);
   }
 
   .body--nojs .main-nav__wrapper {
@@ -172,13 +182,15 @@
   }
 
   .body--nojs .main-nav__wrapper {
+    position: relative;
+
     flex-direction: row;
     justify-content: flex-end;
-    height: auto;
     width: 100%;
-    padding-right: 60px;
+    height: auto;
     margin-top: 49px;
-    position: relative;
+    padding-right: 60px;
+
     background-color: #161c34;
   }
 }

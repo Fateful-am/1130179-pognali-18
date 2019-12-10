@@ -1,20 +1,24 @@
 .intro {
   position: relative;
+  z-index: 5;
+
   display: flex;
   flex-direction: column;
   min-height: 1003px;
+
   background-color: #161c35;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 79px 223px, 0 0;
-  z-index: 5;
 
   &::after {
     content: "";
     position: absolute;
+    top: 763px;
+
     width: 100%;
     height: 279px;
-    top: 763px;
+
     background-color: #192144;
   }
 }
@@ -26,9 +30,10 @@
 .intro__header {
   margin-top: 54px;
   padding: 40px;
-  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+
   font-size: 36px;
   line-height: 40px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
 }
@@ -39,6 +44,7 @@
   min-height: 200px;
   margin-top: 194px;
   padding: 47px 100px 0 50px;
+
   background-color: #161c35;
 }
 
@@ -48,22 +54,26 @@
 
 .intro-list {
   position: relative;
+  z-index: 6;
+
   display: flex;
   flex-direction: column;
   margin-top: 5px;
   padding: 0 25px;
-  z-index: 6;
-  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+
   font-size: 18px;
   line-height: 18px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
 }
 
 .intro-list__item {
   position: relative;
+
   display: flex;
   flex-direction: row-reverse;
-  padding-top: 22px;
   height: 100px;
+  padding-top: 22px;
+
   border-radius: 10px;
 }
 
@@ -72,36 +82,42 @@
 }
 
 .intro-list__item:nth-child(2) {
-  background-color: #ffa530;
   top: -20px;
+
+  background-color: #ffa530;
 }
 
 .intro-list__item:nth-child(3) {
-  background-color: #ffbd30;
   top: -40px;
 
-  & .intro-list__step-name {
+  background-color: #ffbd30;
+
+  .intro-list__step-name {
     padding-right: 55px;
   }
 }
 
 .intro-list__item:nth-child(4) {
-  background-color: #ffd74b;
-  height: 80px;
   top: -60px;
+
+  height: 80px;
+
+  background-color: #ffd74b;
 }
 
 .intro-list__step-name {
-  padding: 0 25px;
   flex-grow: 1;
+  padding: 0 25px;
+
   text-align: left;
   color: #161c35;
 }
 
 .intro-list__step-num {
-  width: 50px;
-  text-align: center;
   flex-shrink: 0;
+  width: 50px;
+
+  text-align: center;
   color: #ffffff;
 }
 
@@ -112,6 +128,7 @@
 
   .intro {
     min-height: 1000px;
+
     background-color: #182044;
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-position: 284px 403px, -355px 382px;
@@ -124,16 +141,18 @@
   .intro__header {
     margin-top: 163px;
     padding: 0 170px;
-    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+
     font-size: 60px;
     line-height: 70px;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
   }
 
   .intro__blockquote {
-    background-color: transparent;
     margin-top: 35px;
     padding: 0 74px;
     padding-right: 400px;
+
+    background-color: transparent;
   }
 
   .intro__cite {
@@ -145,18 +164,21 @@
     flex-wrap: wrap;
     margin-top: 196px;
     padding: 0 40px;
+
     font-size: 24px;
     line-height: 24px;
   }
 
   .intro-list__item:nth-child(n) {
-    width: 40%;
     top: 0;
+
     flex-grow: 1;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    border-radius: 0;
+    width: 40%;
     height: 140px;
+
+    border-radius: 0;
   }
 
   .intro-list__item:nth-child(-n+2) {
@@ -165,17 +187,19 @@
   }
 
   .intro-list__item:nth-child(n+3) {
-    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .intro-list__item:nth-child(n)::after {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 140px;
     top: 0;
     right: -20px;
+
+    width: 40px;
+    height: 140px;
+
     background-color: #ff8d30;
   }
 
@@ -188,26 +212,27 @@
       background-color: #ffbd30;
     }
 
-    & .intro-list__step-name {
+    .intro-list__step-name {
       padding-right: 120px;
     }
   }
 
   .intro-list__step-name {
+    flex-grow: 0;
     margin-top: 9px;
     padding: 0 33px;
     padding-right: 100px;
-    flex-grow: 0;
   }
 
   .intro-list__step-num {
+    flex-shrink: 1;
     width: 100%;
     margin-top: 9px;
     padding: 0 33px;
-    text-align: left;
-    flex-shrink: 1;
+
     font-size: 30px;
     line-height: 30px;
+    text-align: left;
   }
 }
 
@@ -222,6 +247,7 @@
     margin-bottom: 0;
     padding: 0 128px;
     padding-right: 180px;
+
     text-align: left;
   }
 
@@ -230,42 +256,47 @@
     margin-top: 220px;
     padding: 0 80px;
     padding-left: 375px;
+
     text-align: left;
   }
 
   .intro {
+    flex-direction: row;
+    flex-wrap: wrap;
     min-height: 750px;
+
     background-color: #161c35;
     background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
     background-position: 604px 110px, -180px 0;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
-    flex-direction: row;
-    flex-wrap: wrap;
 
     &::after {
-      display: none;
       top: auto;
       bottom: 0;
       z-index: 4;
+
+      display: none;
     }
   }
 
   .intro-list {
-    margin-top: -23px;
-    width: 100%;
     flex-wrap: nowrap;
+    width: 100%;
+    margin-top: -23px;
     padding: 0 60px;
+
     font-size: 24px;
     line-height: 24px;
   }
 
   .intro-list__item:nth-child(n) {
-    width: 345px;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    border-radius: 20px;
+    width: 345px;
     height: 107px;
+
+    border-radius: 20px;
 
     &::after {
       width: 40px;
@@ -282,12 +313,12 @@
   }
 
   .intro-list__item:nth-child(1),
-  .intro-list__item:nth-child(4), {
+  .intro-list__item:nth-child(4) {
     width: 315px;
   }
 
   .intro-list__item:nth-child(3) {
-    & .intro-list__step-name {
+    .intro-list__step-name {
       padding-right: 75px;
     }
   }
@@ -297,18 +328,19 @@
   }
 
   .intro-list__step-name {
+    flex-grow: 0;
     margin-top: 7px;
     padding: 0 35px;
     padding-right: 20px;
-    flex-grow: 0;
   }
 
   .intro-list__step-num {
+    // text-align: left;
+    flex-shrink: 0;
     width: 50px;
     margin-top: 7px;
     padding: 0 5px;
-    // text-align: left;
-    flex-shrink: 0;
+
     font-size: 24px;
     line-height: 24px;
   }

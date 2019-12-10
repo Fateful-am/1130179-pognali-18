@@ -7,11 +7,12 @@
   display: flex;
   width: 189px;
   height: 40px;
+
+  background-color: #ffd74b;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #ffd74b;
+  border-bottom-left-radius: 20px;
 
   &:hover {
     background-color: #ffbd30;
@@ -21,15 +22,16 @@
 .user-list__login {
   width: 100%;
   padding-top: 6px;
-  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+
   font-style: normal;
   font-size: 17px;
   line-height: 30px;
-  letter-spacing: 0.15px;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
   text-align: center;
   color: #161c35;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15px;
 
   &:active {
     color: rgba(22, 28, 53, 0.3);
@@ -43,21 +45,22 @@
 }
 
 .main-nav--opened {
-  & .user-list {
+  .user-list {
     display: flex;
     order: 0;
   }
 
-  & .user-list__item {
-    height: 50px;
+  .user-list__item {
     width: 100%;
+    height: 50px;
+
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
 
-  & .user-list__login {
+  .user-list__login {
     padding-top: 12px;
   }
 }
@@ -65,27 +68,30 @@
 @media (min-width: @tablet-width) {
   .user-list,
   .main-nav--opened .user-list {
+    right: 65px;
+
     order: -1;
     align-self: flex-end;
-    right: 65px;
   }
 
   .main-nav--opened .user-list__login {
-    padding-left: 28px;
     padding-right: 28px;
+    padding-left: 28px;
   }
 
   .user-list__item,
   .main-nav--opened .user-list__item {
     height: 50px;
+
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
 
   .user-list__login {
     padding-top: 12px;
+
     font-size: 20px;
   }
 }

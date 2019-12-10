@@ -1,16 +1,19 @@
 .page-header {
   position: absolute;
-  display: flex;
-  height: 73px;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
   z-index: 100;
+
+  display: flex;
+  height: 73px;
+
   background-color: #161c36;
+  transform: translate(-50%, 0);
 
   &.page-header--scroll {
-    background-color: #ffffff;
     position: fixed;
+
+    background-color: #ffffff;
   }
 
   &.body--nojs {
@@ -21,6 +24,7 @@
 @media (min-width: @tablet-width) {
   .page-header {
     height: 132px;
+
     background-color: #182044;
   }
 }
@@ -29,6 +33,7 @@
   .page-header,
   .body--nojs .page-header {
     height: 90px;
+
     background-color: #161c34;
   }
 }

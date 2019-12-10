@@ -1,6 +1,7 @@
 .site-list {
-  display: none;
   position: relative;
+
+  display: none;
 }
 
 .site-list li {
@@ -8,29 +9,30 @@
 }
 
 .main-nav--opened {
-  & .site-list {
+  .site-list {
     display: flex;
     flex-direction: column;
     margin: 157px 25px 49px 25px;
   }
 
-  & .site-list__item {
+  .site-list__item {
     padding-right: 0;
   }
 }
 
 .site-list__item {
-  margin: 0;
   display: inline-block;
-  overflow: hidden;
   width: 100%;
-  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  margin: 0;
+  overflow: hidden;
+
   font-size: 30px;
   line-height: 36px;
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
   letter-spacing: -0.25px;
 
   &:not(.site-list__item--active) {
@@ -39,17 +41,21 @@
 
   &:not(.site-list__item--active) span {
     position: relative;
+
     display: block;
+
     transition: transform 0.3s;
   }
 
   &:not(.site-list__item--active) span::before {
+    content: attr(data-hover);
     position: absolute;
+    top: 100%;
+
     display: flex;
     justify-content: center;
-    top: 100%;
     width: 100%;
-    content: attr(data-hover);
+
     color: #ffd74b;
   }
 
@@ -73,15 +79,16 @@
 
 @media (min-width: @tablet-width) {
   .main-nav--opened {
-    & .site-list {
+    .site-list {
       margin: 94px 40px 49px 59px;
     }
   }
 
   .site-list__item {
+    margin: 0;
+
     font-size: 60px;
     line-height: 71px;
-    margin: 0;
     text-align: left;
 
     &:not(.site-list__item--active) span::before {
@@ -92,18 +99,20 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    padding-top: 4px;
-    padding-left: 365px;
     display: flex;
     flex-grow: 1;
+    padding-top: 4px;
+    padding-left: 365px;
 
     &::before {
       content: "";
       position: absolute;
-      width: 60px;
-      height: 2px;
       top: 25px;
       left: 260px;
+
+      width: 60px;
+      height: 2px;
+
       background-color: #ffffff;
     }
   }
@@ -113,30 +122,33 @@
   }
 
   .site-list__item {
+    align-self: center;
     margin-right: 37px;
+
     font-size: 20px;
     line-height: 20px;
-    align-self: center;
   }
 
   .body--nojs {
-    & .site-list {
+    .site-list {
       position: relative;
+
       flex-direction: row;
       margin: 0;
     }
 
-    & .site-list::before {
+    .site-list::before {
       background-color: #ffffff;
     }
 
-    & .site-list__item {
+    .site-list__item {
       align-self: center;
-      color: #ffffff;
+      width: 100%;
       margin: 0;
       margin-right: 37px;
+
       text-align: left;
-      width: 100%;
+      color: #ffffff;
 
       &:not(.site-list__item--active) {
         color: rgba(255, 255, 255, 1);
