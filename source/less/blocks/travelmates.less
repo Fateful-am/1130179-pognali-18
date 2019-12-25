@@ -1,0 +1,393 @@
+.travelmates {
+  background-color: #192144;
+  background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 152px 39px, -10px 311px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 0;
+    z-index: 0;
+
+    width: 113px;
+    height: 132px;
+
+    background-color: #141b3b;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.travelmates__header {
+  position: relative;
+  z-index: 1;
+
+  padding-top: 73px;
+  padding-left: 49px;
+}
+
+.travelmates__description {
+  margin-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.travelmates__pp1 {
+  display: none;
+}
+
+.travelmates__strong {
+  margin-top: 21px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.travelmates-slides {
+  width: 100%;
+  margin-top: 46px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.travelmates-slides__item {
+  position: relative;
+
+  margin-top: 10px;
+
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.travelmates-slide__wrapper {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.travelmates-slides__item:hover .travelmates-slide__image {
+  transform: scale(1.15);
+}
+
+.travelmates-level {
+  top: 16px;
+  left: 17px;
+}
+
+.travelmate-name {
+  position: relative;
+
+  margin-top: 10px;
+  padding: 0;
+
+  font-size: 21px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  color: #1d2e5b;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.version-1,
+.version-2 {
+  position: relative;
+}
+
+.version-1 .travelmate-name {
+  padding-top: 16px;
+  padding-left: 1px;
+
+  text-align: center;
+}
+
+.version-2 .travelmate-name {
+  width: 50px;
+
+  text-align: left;
+}
+
+.travelmate-name::before {
+  content: "";
+  position: absolute;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+}
+
+.travelmates-slide__name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+// .travelmates-slide__name.version-2 {
+//   display: flex;
+// }
+
+.travelmate-name--red-light::before {
+  background-color: #f97676;
+}
+
+.travelmate-name--green-light::before {
+  background-color: #81e31e;
+}
+
+.version-1 .travelmate-name::before {
+  top: 23px;
+  left: -15px;
+}
+
+.version-2 .travelmate-name::before {
+  top: 20px;
+  right: 20px;
+}
+
+.version-2 .travelmates-slide__img {
+  margin: 15px;
+
+  border-radius: 50%;
+}
+
+.travelmates-slide__likes {
+  position: absolute;
+  top: 65px;
+  left: 100px;
+
+  font-size: 14px;
+  color: #161c35;
+}
+
+.travelmates-slide__likes::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -40px;
+
+  width: 31px;
+  height: 31px;
+
+  background-color: #edeff6;
+  border-radius: 50%;
+}
+
+.travelmates-slide__likes--marked::before {
+  background-color: #f9eaea;
+}
+
+.travelmates__tag-list {
+  margin-top: 14px;
+}
+
+.travelmates__transport-list {
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.travelmates__button {
+  margin-top: 20px;
+  margin-bottom: 29px;
+  margin-left: 25px;
+}
+
+.travelmates-under {
+  background-color: edeff6;
+}
+
+@media (min-width: @tablet-width) {
+  .travelmates {
+    background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-position: 40px 426px, 408px 80px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+    &::before {
+      top: 80px;
+      left: 40px;
+
+      width: 213px;
+      height: 213px;
+
+      border-radius: 20px;
+    }
+  }
+
+  .travelmates__header {
+    padding-top: 153px;
+    padding-left: 72px;
+  }
+
+  .travelmates__description {
+    margin-top: 68px;
+    padding-right: 250px;
+    padding-left: 75px;
+  }
+
+  .travelmates__pp1 {
+    display: inline;
+  }
+
+  .travelmates__strong {
+    margin-top: 39px;
+    padding-right: 400px;
+    padding-left: 75px;
+  }
+
+  .travelmates-slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .travelmates-slides__item {
+    width: 285px;
+    margin-top: 10px;
+
+    background-color: #ffffff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .travelmates-slide__wrapper {
+    width: 100%;
+    height: 285px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .travelmates-slide__image {
+    width: 285px;
+    height: 285px;
+  }
+
+  .travelmates-level {
+    top: 20px;
+    left: 20px;
+  }
+
+  .travelmate-name {
+    margin-top: 10px;
+    padding: 0;
+
+    font-size: 24px;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  .version-1 .travelmate-name {
+    padding-top: 22px;
+    padding-left: 1px;
+
+    &::before {
+      top: 29px;
+      left: -21px;
+    }
+  }
+
+  .travelmates__tag-list {
+    margin-top: 22px;
+  }
+
+  .travelmates__transport-list {
+    margin-top: 24px;
+    margin-bottom: 22px;
+  }
+
+  .travelmates__button {
+    width: 618px;
+    margin-top: 80px;
+    margin-bottom: 87px;
+    margin-left: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travelmates {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 750px;
+
+    background-position: 547px 133px, 191px 385px;
+
+    &::before {
+      top: 68px;
+      left: 60px;
+    }
+  }
+
+  .travelmates__header {
+    width: 40%;
+    padding-top: 141px;
+    padding-left: 128px;
+  }
+
+  .travelmates__description {
+    width: 40%;
+    margin-top: 68px;
+    padding-right: 0;
+    padding-left: 131px;
+  }
+
+  .travelmates__pp1 {
+    display: inline;
+  }
+
+  .travelmates__strong {
+    width: 40%;
+    margin-top: 39px;
+    padding-right: 0;
+    padding-left: 131px;
+  }
+
+  .travelmates-slides {
+    justify-content: center;
+    order: 5;
+    width: 750px;
+    margin-top: 103px;
+    padding: 0;
+  }
+
+  .travelmates-slides__item {
+    margin: 30px;
+  }
+
+  .travelmates-level {
+    top: 23px;
+    left: 23px;
+  }
+
+  .travelmates__button {
+    order: 4;
+    width: 280px;
+    margin-top: 82px;
+    margin-bottom: 29px;
+    margin-left: 131px;
+  }
+}

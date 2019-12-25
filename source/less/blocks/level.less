@@ -1,0 +1,120 @@
+.level__pie {
+  transform: rotate(-90deg);
+
+  fill: transparent;
+  stroke: #ff8d30;
+  stroke-dashoffset: 0;
+}
+
+.level {
+  position: absolute;
+}
+
+.level__num {
+  position: absolute;
+}
+
+.level--v1 .level__pie {
+  width: 60px;
+  height: 60px;
+
+  stroke-width: 3px;
+}
+
+.level--v2 .level__pie {
+  width: 45px;
+  height: 45px;
+
+  stroke-width: 2px;
+}
+
+.level--v3 .level__pie {
+  width: 100px;
+  height: 100px;
+
+  stroke-width: 3px;
+}
+
+.level--v1::before {
+  content: "";
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  background: #000000;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.level--v1 .level__num {
+  top: 14px;
+  left: 17px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.level--v1 .level__num::after {
+  content: "level";
+  position: absolute;
+  top: 22px;
+  left: -3px;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 1px;
+  padding-left: 1px;
+  font-family: "Blogger Sans Regular", "Arial", sans-serif;
+
+  width: 31px;
+
+  text-align: center;
+  color: #ffffff;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.level--v2 .level__num {
+  top: 12px;
+  left: 10px;
+
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d2e5b;
+}
+
+.level--v3 .level__num {
+  top: 20px;
+  left: 30px;
+
+  font-size: 38px;
+  line-height: 38px;
+  color: #161c35;
+}
+
+.level--v3 .level__num::after {
+  content: "level";
+  position: absolute;
+  top: 40px;
+  left: -4px;
+
+  width: 49px;
+
+  font-size: 18px;
+  line-height: 22.17px;
+  text-align: center;
+  color: #444444;
+
+  border-top: 2px solid #000000;
+}
+
+.level-pie (@version,@percent,@radius,@strocke-width) {
+  .level--v@{version} .level__pie--@{percent} {
+    stroke-dasharray: 2 * pi() *(@radius - @strocke-width / 2) * @percent / 100px 1000px;
+  }
+}
+
+.level-pie(1,99,30,3);
+.level-pie(1,80,30,3);

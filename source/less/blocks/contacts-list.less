@@ -5,8 +5,10 @@
 .contacts-list__item::before {
   content: "";
   position: absolute;
+
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
 }
 
@@ -33,13 +35,15 @@
 
 .contacts-list__link {
   position: relative;
+
   display: flex;
   min-width: 40px;
   height: 40px;
-  color: #192144;
-  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+
   font-size: 16px;
   line-height: 22px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  color: #192144;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -64,6 +68,7 @@
   position: absolute;
   top: 11px;
   left: 12px;
+
   fill: #161c35;
 }
 
@@ -71,6 +76,7 @@
   position: absolute;
   top: 13px;
   left: 11px;
+
   fill: #161c35;
 }
 
@@ -86,23 +92,26 @@
 }
 
 .main-nav--opened {
-  & .contacts-list {
+  .contacts-list {
     top: 0;
     left: 0;
+
     display: flex;
-    margin-top: 51px;
     flex-direction: column;
+    margin-top: 51px;
   }
 
-  & .contacts-list__item::before {
+  .contacts-list__item::before {
     width: 45px;
     height: 45px;
+
     background-color: #121936;
   }
 
-  & .contacts-list__link {
-    color: #192144;
+  .contacts-list__link {
     height: 45px;
+
+    color: #192144;
 
     &:hover {
       color: rgba(25, 33, 68, 0.6);
@@ -113,27 +122,29 @@
     }
   }
 
-  & .contacts-list__text {
+  .contacts-list__text {
     display: block;
     margin-left: 61px;
     padding-top: 13px;
   }
 
-  & .contacts-list__icon-topmenu-phone,
+  .contacts-list__icon-topmenu-phone,
   .contacts-list__icon-topmenu-email {
     display: none;
   }
 
-  & .contacts-list__icon-contacts-phone,
+  .contacts-list__icon-contacts-phone,
   .contacts-list__icon-contacts-email {
-    display: block;
     position: absolute;
     top: 14px;
     left: 14px;
+
+    display: block;
+
     fill: #ffd74b;
   }
 
-  & .contacts-list__icon-contacts-email {
+  .contacts-list__icon-contacts-email {
     top: 17px;
   }
 }
@@ -144,39 +155,43 @@
   }
 
   .main-nav--opened {
-    & .contacts-list {
+    .contacts-list {
       display: flex;
       margin-top: 79px;
       margin-left: 57px;
     }
 
-    & .contacts-list__item::before {
+    .contacts-list__item::before {
       width: 68px;
       height: 68px;
     }
 
-    & .contacts-list__link {
+    .contacts-list__link {
       height: 68px;
+
       font-size: 28px;
     }
 
-    & .contacts-list__text {
+    .contacts-list__text {
       margin-left: 92px;
       padding-top: 25px;
     }
 
-    & .contacts-list__icon-contacts-phone,
+    .contacts-list__icon-contacts-phone,
     .contacts-list__icon-contacts-email {
-      width: 27px;
-      height: 27px;
       top: 21px;
       left: 21px;
+
+      width: 27px;
+      height: 27px;
+
       fill: #ffd74b;
     }
 
-    & .contacts-list__icon-contacts-email {
-      height: 20px;
+    .contacts-list__icon-contacts-email {
       top: 25px;
+
+      height: 20px;
     }
   }
 }
@@ -193,6 +208,7 @@
   .body--nojs .contacts-list__item::before {
     width: 50px;
     height: 50px;
+
     background-color: #ffbd30;
   }
 
@@ -219,22 +235,24 @@
 
   .contacts-list__icon-topmenu-phone,
   .body--nojs .contacts-list__icon-topmenu-phone {
-    display: block;
     top: 16px;
     left: 17px;
+
+    display: block;
   }
 
   .contacts-list__icon-topmenu-email,
   .body--nojs .contacts-list__icon-topmenu-email {
-    display: block;
     top: 18px;
     left: 16px;
+
+    display: block;
   }
 
   .body--nojs {
-    & .contacts-list__icon-contacts-phone,
-    & .contacts-list__icon-contacts-email,
-    & .contacts-list__text {
+    .contacts-list__icon-contacts-phone,
+    .contacts-list__icon-contacts-email,
+    .contacts-list__text {
       display: none;
     }
   }

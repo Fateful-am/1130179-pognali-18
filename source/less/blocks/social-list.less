@@ -3,18 +3,21 @@
 }
 
 .social-list__item {
+  position: relative;
+
+  display: flex;
   width: 45px;
   height: 45px;
-  position: relative;
-  display: flex;
 
   &::before {
     content: "";
     position: absolute;
+
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+
     background-color: #ffd74b;
+    border-radius: 50%;
   }
 
   &:hover::before {
@@ -23,14 +26,16 @@
 }
 
 .social-list__link {
+  z-index: 1;
+
   display: block;
   width: 100%;
-  z-index: 1;
 }
 
 .social-list__icon {
   position: absolute;
   z-index: 2;
+
   fill: #1d2e5b;
 }
 
@@ -50,13 +55,13 @@
 }
 
 .main-nav--opened {
-  & .social-list {
+  .social-list {
+    display: flex;
     margin-top: 29px;
     margin-left: 68px;
-    display: flex;
   }
 
-  & .social-list__item {
+  .social-list__item {
     &::before {
       background-color: #ffffff;
     }
@@ -74,7 +79,7 @@
     }
   }
 
-  & .social-list__icon {
+  .social-list__icon {
     fill: #cccccc;
   }
 }
@@ -95,31 +100,34 @@
   }
 
   .social-list__icon-fb {
-    width: 14px;
-    height: 28px;
     top: 16px;
     left: 23px;
+
+    width: 14px;
+    height: 28px;
   }
 
   .social-list__icon-vk {
-    width: 31px;
-    height: 16px;
     top: 23px;
     left: 14px;
+
+    width: 31px;
+    height: 16px;
   }
 
   .social-list__icon-ig {
-    width: 24px;
-    height: 24px;
     top: 18px;
     left: 18px;
+
+    width: 24px;
+    height: 24px;
   }
 
   .main-nav--opened {
-    & .social-list {
+    .social-list {
+      display: flex;
       margin-top: 115px;
       margin-left: 60px;
-      display: flex;
     }
   }
 }
