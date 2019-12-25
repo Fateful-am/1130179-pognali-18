@@ -33,9 +33,11 @@
 .content__button {
   position: relative;
 
+  display: block;
   width: 270px;
   height: 62px;
   padding: 24px;
+  padding-top: 23px;
 
   font-style: normal;
   font-size: 18px;
@@ -70,6 +72,25 @@
     border-left-width: 10px;
     border-left-color: #1d2e5b;
   }
+}
+
+.content__slides {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-under {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+
+  width: 100%;
+  height: 100px;
+}
+
+.content__bottom {
+  height: 1px;
 }
 
 @media (min-width: @tablet-width) {
@@ -111,6 +132,10 @@
       right: 36px;
     }
   }
+
+  // .content__slides {
+  //   flex-direction: row;
+  // }
 }
 
 @media (min-width: @desktop-width) {

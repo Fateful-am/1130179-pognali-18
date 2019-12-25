@@ -108,67 +108,105 @@
           </li>
           <li class="intro-list__item">
             <span class="intro-list__step-num">3</span>
-            <span class="intro-list__step-name">Находите тех, кто похож на вас</span>
+            <span class="intro-list__step-name">Находите тех,<br class="intro__pp1"> кто похож на вас</span>
           </li>
           <li class="intro-list__item">
             <span class="intro-list__step-num">4</span>
             <span class="intro-list__step-name">Путешествуйте вместе!</span>
           </li>
         </ul>
+        <div class="content-under intro-under"></div>
+        <div class="content__bottom"></div>
       </section>
       <section class="content about">
         <h2 class="content__header about__header">О сервисе</h2>
-        <p class="content__description about__description">Любое путешествие веселее <br class="about__pp1">с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <br class="about__pp2">и черпайте вдохновение в чужих.</p>
+        <p class="content__description about__description">Любое путешествие веселее <br class="about__pp1">
+          с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <br class="about__pp2">
+          и черпайте вдохновение в чужих.</p>
         <p class="content__strong about__strong">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         <a class="content__button about__button" href="#">Подробнее</a>
+        <div class="content-under about-under"></div>
+        <div class="content__bottom"></div>
       </section>
       <section class="content countries">
-        <h2 class="content__header">Направления</h2>
-        <p class="content__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <h2 class="content__header countries__header">Направления</h2>
+        <p class="content__description countries__description">Мы не продаем туры <br class="countries__pp1">
+          и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
         <ul class="content__slides country-slides">
           <li class="country-slides__item">
             <div class="country-slide">
-              <img class="country-slide__image" src="https://via.placeholder.com/270x110" width="270" height="110" alt="Таиланд">
+              <picture>
+                <source srcset="img/thailand-desktop@1x.jpg" media="(min-width: 768px)">
+                <img class="country-slide__image" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд">
+              </picture>
               <div class="country-slide__wrapper">
                 <p class="country-slide__country">Таиланд</p>
                 <p class="country-slide__slogan">Джунгли зовут!</p>
-                <p class="country-slide__counter">18321</p>
+                <p class="country-slide__counter">
+                  <svg class="country-slide__user-icon" width="11" height="11" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                  18321
+                </p>
               </div>
             </div>
           </li>
           <li class="country-slides__item">
             <div class="country-slide">
-              <img class="country-slide__image" src="https://via.placeholder.com/270x110" width="270" height="110" alt="Франция">
+              <picture>
+                <source srcset="img/france-desktop@1x.jpg" media="(min-width: 768px)">
+                <img class="country-slide__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+              </picture>
               <div class="country-slide__wrapper">
                 <p class="country-slide__country">Франция</p>
                 <p class="country-slide__slogan">Трэ бьен, манифик!</p>
-                <p class="country-slide__counter">12518</p>
+                <p class="country-slide__counter">
+                  <svg class="country-slide__user-icon" width="11" height="11" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                  12518
+                </p>
               </div>
             </div>
           </li>
           <li class="country-slides__item">
             <div class="country-slide">
-              <img class="country-slide__image" src="https://via.placeholder.com/270x110" width="270" height="110" alt="Чехия">
+              <picture>
+                <source srcset="img/czech-desktop@1x.jpg" media="(min-width: 768px)">
+                <img class="country-slide__image" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+              </picture>
               <div class="country-slide__wrapper">
                 <p class="country-slide__country">Чехия</p>
                 <p class="country-slide__slogan">Закоулки старой Европы</p>
-                <p class="country-slide__counter">5326</p>
+                <p class="country-slide__counter">
+                  <svg class="country-slide__user-icon" width="11" height="11" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                  5326
+                </p>
               </div>
             </div>
           </li>
         </ul>
-        <a class="content__button" href="form.html">Показать все</a>
+        <a class="content__button countries__button" href="form.html">Показать все</a>
+        <div class="content-under countries-under"></div>
+        <div class="content__bottom"></div>
       </section>
       <section class="content travelmates">
-        <h2 class="content__header">Попутчики</h2>
-        <p class="content__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="content__strong">Теперь можно легко найти единомышленников!</p>
+        <h2 class="content__header travelmates__header">Попутчики</h2>
+        <p class="content__description travelmates__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, <br class="travelmates__pp1">а другому маршрут для хайкинга.</p>
+        <p class="content__strong travelmates__strong">Теперь можно легко<br class="travelmates__pp1"> найти единомышленников!</p>
         <ul class="content__slides travelmates-slides">
           <li class="travelmates-slides__item">
-            <img class="travelmates-slide__image" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Таня Фирсова">
-            <div class="travelmates-slide__level-wrapper level level--v1">
+            <div class="travelmates-slide__wrapper">
+              <picture>
+                <source srcset="img/firsova-desktop@1x.jpg">
+                  <img class="travelmates-slide__image" src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Таня Фирсова">
+                </picture>
+            </div>
+            <div class="travelmates-level level level--v1">
               <svg class="level__pie level__pie--99" viewBox="0 0 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                <circle circle cx="30" cy="30" r="28.5"> </circle>
+                <circle cx="30" cy="30" r="28.5"> </circle>
               </svg>
               <span class="level__num">99</span>
             </div>
@@ -178,9 +216,9 @@
               <li class="wish-list__item wish-list__item--seychelles"></li>
             </ul>
             <div class="travelmates-slide__name version-1">
-              <p class="travelmate-name travelmate-name--red-light">Таня Фирсова</p>
+              <a href="#" class="travelmate-name travelmate-name--red-light">Таня Фирсова</a>
             </div>
-            <ul class="travelmates-slide__list tag-list version-1">
+            <ul class="travelmates__tag-list tag-list version-1">
               <li class="tag-list__item">#ЗОЖ</li>
               <li class="tag-list__item">#ПП</li>
               <li class="tag-list__item">#Фитнес</li>
@@ -188,24 +226,37 @@
               <li class="tag-list__item">#авокадо</li>
               <li class="tag-list__item">#смузи</li>
             </ul>
-            <ul class="travelmates-slide__list transport-list">
-              <li class="transport-list__item transport-list__item--active">
-                <img class="transport-list__image" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Самолет">
+            <ul class="travelmates__transport-list transport-list">
+              <li class="transport-list__item transport-list__item--active" data-hover="Авиаперелет">
+                <svg class="transport-list__icon" width="19" height="21" focusable="false" role="img" aria-label="Авиаперелет">
+                  <use xlink:href="img/sprite.svg#plane"></use>
+                </svg>
               </li>
-              <li class="transport-list__item">
-                <img class="transport-list__image" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Автобус">
+              <li class="transport-list__item" data-hover="Автотранспорт">
+                <svg class="transport-list__icon" width="17" height="21" focusable="false" role="img" aria-label="Автотранспорт">
+                  <use xlink:href="img/sprite.svg#bus"></use>
+                </svg>
               </li>
-              <li class="transport-list__item">
-                <img class="transport-list__image" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Велосипед">
+              <li class="transport-list__item" data-hover="Велосипед">
+                <svg class="transport-list__icon" width="24" height="21" focusable="false" role="img" aria-label="Велосипед">
+                  <use xlink:href="img/sprite.svg#bike"></use>
+                </svg>
               </li>
-              <li class="transport-list__item">
-                <img class="transport-list__image" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Пешком">
+              <li class="transport-list__item" data-hover="Пешком">
+                <svg class="transport-list__icon" width="20" height="21" focusable="false" role="img" aria-label="Пешком">
+                  <use xlink:href="img/sprite.svg#run"></use>
+                </svg>
               </li>
             </ul>
           </li>
           <li class="travelmates-slides__item">
-            <img class="travelmates-slide__image" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Петя Демин">
-            <div class="travelmates-slide__level-wrapper level level--v1">
+            <div class="travelmates-slide__wrapper">
+              <picture>
+                <source srcset="img/demin-desktop@1x.jpg">
+                <img class="travelmates-slide__image" src="img/demin-desktop@1x.jpg" width="270" height="270" alt="Петя Демин">
+              </picture>
+            </div>
+            <div class="travelmates-level level level--v1">
               <svg class="level__pie level__pie--80" viewBox="0 0 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
                 <circle circle cx="30" cy="30" r="28.5"> </circle>
               </svg>
@@ -216,32 +267,42 @@
               <li class="wish-list__item wish-list__item--czech"></li>
             </ul>
             <div class="travelmates-slide__name version-1">
-              <p class="travelmate-name travelmate-name--red-light">Петя Демин</p>
+              <a href="#" class="travelmate-name travelmate-name--green-light">Петя Демин</a>
             </div>
-            <ul class="travelmates-slide__list tag-list version-1">
+            <ul class="travelmates__tag-list tag-list version-1">
               <li class="tag-list__item">#бургер</li>
               <li class="tag-list__item">#бар</li>
               <li class="tag-list__item">#футбол</li>
               <li class="tag-list__item">#концерт</li>
               <li class="tag-list__item">#крафт</li>
             </ul>
-            <ul class="travelmates-slide__list transport-list">
-              <li class="transport-list__item transport-list__item--active">
-                <img class="transport-list__image" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Самолет">
+            <ul class="travelmates__transport-list transport-list">
+              <li class="transport-list__item transport-list__item--active" data-hover="Авиаперелет">
+                <svg class="transport-list__icon" width="19" height="21" focusable="false" role="img" aria-label="Авиаперелет">
+                  <use xlink:href="img/sprite.svg#plane"></use>
+                </svg>
               </li>
-              <li class="transport-list__item">
-                <img class="transport-list__image transport-list__item--active" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Автобус">
+              <li class="transport-list__item transport-list__item--active" data-hover="Автотранспорт">
+                <svg class="transport-list__icon" width="17" height="21" focusable="false" role="img" aria-label="Автотранспорт">
+                  <use xlink:href="img/sprite.svg#bus"></use>
+                </svg>
               </li>
-              <li class="transport-list__item">
-                <img class="transport-list__image" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Велосипед">
+              <li class="transport-list__item" data-hover="Велосипед">
+                <svg class="transport-list__icon" width="24" height="21" focusable="false" role="img" aria-label="Велосипед">
+                  <use xlink:href="img/sprite.svg#bike"></use>
+                </svg>
               </li>
-              <li class="transport-list__item">
-                <img class="transport-list__image transport-list__item--active" src="https://via.placeholder.com/24x21" width="24" height="21" alt="Пешком">
+              <li class="transport-list__item transport-list__item--active" data-hover="Пешком">
+                <svg class="transport-list__icon" width="20" height="21" focusable="false" role="img" aria-label="Пешком">
+                  <use xlink:href="img/sprite.svg#run"></use>
+                </svg>
               </li>
             </ul>
           </li>
         </ul>
-        <a class="content__to-all button" href="catalog.html">Показать всеx</a>
+        <a class="content__button travelmates__button" href="catalog.html">Показать всеx</a>
+        <div class="content-under travelmates-under"></div>
+        <div class="content__bottom"></div>
       </section>
       <section class="content rates">
         <h2 class="content__header">Добавьте свой профиль</h2>
