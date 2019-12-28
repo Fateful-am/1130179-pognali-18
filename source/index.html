@@ -305,43 +305,56 @@
         <div class="content__bottom"></div>
       </section>
       <section class="content rates">
-        <h2 class="content__header">Добавьте свой профиль</h2>
+        <h2 class="content__header rates__header">Добавьте свой профиль</h2>
         <ul class="rates-list">
-          <li class="rates-list__item">
-            <p class="rates-list__rate">Базовое размещение<br>
-              Бесплатно</p>
+          <li class="rates-list__item rates-list__item--with-num" data-hover="1">
+            <p class="rates-list__rate">Базовое размещение</p>
+            <p class="rates-list__rate">Бесплатно</p>
           </li>
-          <li class="rates-list__item">
-            <p class="rates-list__rate">Вывод на первых позициях<br>
-              99 руб./мес</p>
+          <li class="rates-list__item rates-list__item--with-num" data-hover="2">
+            <p class="rates-list__rate">Вывод на первых позициях</p>
+            <p class="rates-list__rate">99 руб./мес</p>
           </li>
-          <li class="rates-list__item">
-            <p class="rates-list__rate">Кастомный цвет карточки<br>
-              59 руб./мес</p>
+          <li class="rates-list__item rates-list__item--with-num" data-hover="3">
+            <p class="rates-list__rate">Кастомный цвет карточки</p>
+            <p class="rates-list__rate">59 руб./мес</p>
           </li>
         </ul>
-        <a class="rates-for-business" href="#">Показать тарифы для бизнеса</a>
+        <a class="rates-for-business" href="#">
+          <svg class="rates-for-busines__icon" width="17" height="21" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#business"></use>
+          </svg>
+          Показать тарифы для бизнеса
+        </a>
+        <picture>
+          <!-- <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+          <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)"> -->
+          <img class="rates-for-business__bg" src="img/rates@1x.png" width="100" height="99" alt="Погнали?">
+        </picture>
+
         <div class="business-rates-wraper">
-          <h2 class="content__header">Бизнес-тарифы</h2>
+          <h2 class="content__header rates__header">Бизнес-тарифы</h2>
           <ul class="rates-list">
             <li class="rates-list__item">
-              <p class="rates-list__rate">Реклама у блоггера<br>
-                300 000 руб./пост</p>
+              <p class="rates-list__rate">Реклама у блоггера</p>
+              <p class="rates-list__rate">300 000 руб./пост</p>
             </li>
             <li class="rates-list__item">
-              <p class="rates-list__rate">Накрутка подписчиков<br>
-                от 1 руб./шт.</p>
+              <p class="rates-list__rate">Накрутка подписчиков</p>
+              <p class="rates-list__rate">от 1 руб./шт.</p>
             </li>
             <li class="rates-list__item">
-              <p class="rates-list__rate">Лайки от ботов<br>
-                от 20 коп./лайк</p>
+              <p class="rates-list__rate">Лайки от ботов</p>
+              <p class="rates-list__rate">от 20 коп./лайк</p>
             </li>
             <li class="rates-list__item">
-              <p class="rates-list__rate">Ваш продакт-плейсмент<br>
-                Индивидуально</p>
+              <p class="rates-list__rate">Ваш продакт-плейсмент</p>
+              <p class="rates-list__rate">Индивидуально</p>
             </li>
           </ul>
+          <a class="rates-for-business" href="#">Закрыть окно</a>
         </div>
+        <div class="content-under rates-under"></div>
       </section>
       <section class="content cta-form">
         <h2 class="content__header">Заинтересовались?</h2>

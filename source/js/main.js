@@ -3,6 +3,9 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var pageHeader = document.querySelector('.page-header');
 var mainNavWr = document.querySelector('.main-nav__wrapper');
 var body = document.querySelector('body');
+var businessOpen = document.querySelector('.rates-for-business');
+var businessClose = document.querySelector('.business-rates-wraper .rates-for-business');
+var businnesWrapper = document.querySelector('.business-rates-wraper');
 
 body.classList.remove('body--nojs');
 navMain.classList.remove('main-nav--opened');
@@ -28,6 +31,16 @@ function checkScroll() {
     }
   }
 }
+
+businessOpen.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  businnesWrapper.classList.add('business-rates-modal');
+});
+
+businessClose.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  businnesWrapper.classList.remove('business-rates-modal');
+});
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
