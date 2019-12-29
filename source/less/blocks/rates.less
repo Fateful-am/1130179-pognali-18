@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  // background-color: red;
   background-color: #edeff6;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -26,13 +25,14 @@
 }
 
 .rates-list {
+  z-index: 2;
+
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 43px;
   padding-right: 70px;
   padding-left: 49px;
-  z-index: 2;
 
   font-size: 16px;
   line-height: 22px;
@@ -153,10 +153,10 @@
   margin-right: 25px;
   margin-left: 25px;
   overflow: hidden;
-  box-shadow: 0 10px 25px 3px rgba(0, 0, 0, 0.2);
 
   background-color: #ffffff;
   border-radius: 20px;
+  box-shadow: 0 10px 25px 3px rgba(0, 0, 0, 0.2);
 
   .rates-list {
     margin-top: 29px;
@@ -206,6 +206,7 @@
 
     display: block;
     height: 390px;
+
     box-shadow: none;
   }
 
@@ -219,6 +220,10 @@
   flex-direction: column;
 }
 
+.rates-under {
+  background-color: #192144;
+}
+
 @media (min-width: @tablet-width) {
   .rates {
     border-bottom-right-radius: 60px;
@@ -227,13 +232,15 @@
     &::after {
       content: "";
       position: absolute;
+      top: 149px;
+      right: 40px;
+      z-index: 0;
+
       width: 198px;
       height: 285px;
-      border-radius: 20px;
+
       background-color: #e2e5f2;
-      z-index: 0;
-      right: 40px;
-      top: 149px;
+      border-radius: 20px;
       opacity: 0.5;
     }
   }
@@ -249,6 +256,7 @@
   .rates-for-business__bg {
     top: 409px;
     right: 85px;
+
     width: 100px;
   }
 
@@ -311,18 +319,20 @@
     height: 526px;
     margin-right: 40px;
     margin-left: 40px;
+
     border-radius: 30px;
 
     .rates__header {
       margin-top: 29px;
+
       letter-spacing: -0.1px;
     }
 
     .rates-list {
       width: 506px;
       margin-top: 56px;
-      margin-left: 92px;
       margin-right: 91px;
+      margin-left: 92px;
       padding: 0;
 
       font-size: 22px;
@@ -331,16 +341,17 @@
 
     .rates-list__item {
       display: flex;
+      justify-content: space-between;
       height: 56px;
       padding-top: 13px;
-      justify-content: space-between;
     }
 
     .rates-for-business {
-      margin-left: 0;
-      margin-top: 52px;
       height: 108px;
+      margin-top: 52px;
+      margin-left: 0;
       padding-top: 43px;
+
       font-size: 24px;
       text-transform: none;
     }
@@ -348,8 +359,8 @@
 
   .body--nojs {
     .business-rates-wraper {
-      margin-top: 16px;
       height: 440px;
+      margin-top: 16px;
     }
   }
 }
@@ -360,11 +371,13 @@
     border-bottom-left-radius: 60px;
 
     &::after {
+      top: 234px;
+      right: 246px;
+
       width: 444px;
       height: 300px;
+
       border-radius: 20px;
-      right: 246px;
-      top: 234px;
     }
   }
 
@@ -372,12 +385,14 @@
     padding-top: 119px;
     padding-right: 0;
     padding-left: 0;
+
     text-align: center;
   }
 
   .rates-for-business__bg {
     top: 286px;
     right: 134px;
+
     width: 198px;
     height: 198px;
   }
@@ -399,6 +414,7 @@
 
   .business-rates-wraper {
     top: 109px;
+
     width: 750px;
     height: 526px;
     margin-left: 345px;
