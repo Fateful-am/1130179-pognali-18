@@ -305,65 +305,93 @@
         <div class="content__bottom"></div>
       </section>
       <section class="content rates">
-        <h2 class="content__header">Добавьте свой профиль</h2>
+        <h2 class="content__header rates__header">Добавьте свой профиль</h2>
         <ul class="rates-list">
-          <li class="rates-list__item">
-            <p class="rates-list__rate">Базовое размещение<br>
-              Бесплатно</p>
+          <li class="rates-list__item rates-list__item--with-num" data-hover="1">
+            <p class="rates-list__rate">Базовое размещение</p>
+            <p class="rates-list__rate">Бесплатно</p>
           </li>
-          <li class="rates-list__item">
-            <p class="rates-list__rate">Вывод на первых позициях<br>
-              99 руб./мес</p>
+          <li class="rates-list__item rates-list__item--with-num" data-hover="2">
+            <p class="rates-list__rate">Вывод на первых позициях</p>
+            <p class="rates-list__rate">99 руб./мес</p>
           </li>
-          <li class="rates-list__item">
-            <p class="rates-list__rate">Кастомный цвет карточки<br>
-              59 руб./мес</p>
+          <li class="rates-list__item rates-list__item--with-num" data-hover="3">
+            <p class="rates-list__rate">Кастомный цвет карточки</p>
+            <p class="rates-list__rate">59 руб./мес</p>
           </li>
         </ul>
-        <a class="rates-for-business" href="#">Показать тарифы для бизнеса</a>
+        <a class="rates-for-business" href="#">
+          <svg class="rates-for-busines__icon" width="17" height="21" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="img/sprite.svg#business"></use>
+          </svg>
+          Показать тарифы для бизнеса
+        </a>
+        <picture>
+          <!-- <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+          <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)"> -->
+          <img class="rates-for-business__bg" src="img/rates@1x.png" width="100" height="99" alt="Погнали?">
+        </picture>
+
         <div class="business-rates-wraper">
-          <h2 class="content__header">Бизнес-тарифы</h2>
+          <h2 class="content__header rates__header">Бизнес-тарифы</h2>
           <ul class="rates-list">
             <li class="rates-list__item">
-              <p class="rates-list__rate">Реклама у блоггера<br>
-                300 000 руб./пост</p>
+              <p class="rates-list__rate">Реклама у блоггера</p>
+              <p class="rates-list__rate">300 000 руб./пост</p>
             </li>
             <li class="rates-list__item">
-              <p class="rates-list__rate">Накрутка подписчиков<br>
-                от 1 руб./шт.</p>
+              <p class="rates-list__rate">Накрутка подписчиков</p>
+              <p class="rates-list__rate">от 1 руб./шт.</p>
             </li>
             <li class="rates-list__item">
-              <p class="rates-list__rate">Лайки от ботов<br>
-                от 20 коп./лайк</p>
+              <p class="rates-list__rate">Лайки от ботов</p>
+              <p class="rates-list__rate">от 20 коп./лайк</p>
             </li>
             <li class="rates-list__item">
-              <p class="rates-list__rate">Ваш продакт-плейсмент<br>
-                Индивидуально</p>
+              <p class="rates-list__rate">Ваш продакт-плейсмент</p>
+              <p class="rates-list__rate">Индивидуально</p>
             </li>
           </ul>
+          <a class="rates-for-business" href="#">Закрыть окно</a>
         </div>
+        <div class="content-under rates-under"></div>
       </section>
       <section class="content cta-form">
-        <h2 class="content__header">Заинтересовались?</h2>
-        <p class="content__description">Зарегистрируйтесь,<br>
-          это быстро и бесплатно!<br>
-          Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь</a>.
-        </p>
+        <h2 class="content__header cta-form__header">Заинтересовались?</h2>
+        <p class="content__description cta-form__description">Зарегистрируйтесь,<br class="cta-form__pp1"> это быстро и бесплатно!</p>
+        <p class="content__description cta-form__description">Уже зарегистрированы? Тогда скорее <a class="cta-form__login" href="#">авторизуйтесь</a>.</p>
         <form class="cta-form__form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="cta-form__email" id="email-id" type="email" name="cta-form__email" placeholder="E-mail" aria-label="Ваш e-mail">
-          <button class="cta-form__button" type="submit" aria-label="Отправить"></button>
+
+          <button class="content__button cta-form__button" type="submit" aria-label="Отправить"></button>
         </form>
-        <p class="content__description">Остались вопросы?<br>
-          Мы с радостью на них ответим!
+        <p class="content__description cta-form__description">Остались вопросы?<br class="cta-form__pp1"> Мы с радостью на них ответим!
         </p>
         <ul class="cta-form__list contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__phone" href="tel:+78005558628">8 800 555-86-28</a>
+          <li class="contacts-list__item contacts-list__item-phone">
+            <a class="contacts-list__link" href="tel:+78005558628" aria-label="Позвоните нам">
+              <svg class="contacts-list__icon-topmenu-phone" width="18" height="18" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+              </svg>
+              <svg class="contacts-list__icon-contacts-phone" width="18" height="18" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="img/sprite.svg#contacts-phone"></use>
+              </svg>
+              <span class="contacts-list__text">8 800 555-86-28</span>
+            </a>
           </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contacts-list__item contacts-list__item-email">
+            <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
+              <svg class="contacts-list__icon-topmenu-email" width="18" height="14" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+              </svg>
+              <svg class="contacts-list__icon-contacts-email" width="18" height="13" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="img/sprite.svg#contacts-mail"></use>
+              </svg>
+              <span class="contacts-list__text">mail@htmlacademy.ru</span>
+            </a>
           </li>
         </ul>
+        <div class="content-under cta-form-under"></div>
       </section>
       <section class="content contacts">
         <h2 class="visually-hidden">Контакты</h2>
